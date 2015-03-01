@@ -67,11 +67,7 @@
 
 <div id="wrapper">
   <header id="header" role="banner">
-    <?php if ($logo): ?><div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div><?php endif; ?>
-    <?php if ($site_name): ?><h1 id="site-title"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1><?php endif; ?>
-    <?php if ($site_slogan): ?><div id="site-description"><?php print $site_slogan; ?></div><?php endif; ?>
-    <div class="clear"></div>
-	<?php
+      <?php
 		/* Disable Main menu if unchecked */
 		if ($main_menu == TRUE):
 	?>
@@ -90,6 +86,11 @@
       <div class="clear"></div>
     </nav>
 	<?php endif;?><!-- end main-menu -->
+    
+    <?php if ($site_name): ?><h1 id="site-title"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1><?php endif; ?>
+    <?php if ($logo): ?><div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div><?php endif; ?>
+    <?php if ($site_slogan): ?><div id="site-description"><?php print $site_slogan; ?></div><?php endif; ?>
+    <div class="clear"></div>
   </header>
 
 
